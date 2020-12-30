@@ -75,11 +75,11 @@ class _SignUpState extends State<SignUp> {
                           ),
                           CustomTextFormField(
                             labelName: "Password",
-                            obscureText: false,
+                            obscureText: true,
                           ),
                           CustomTextFormField(
                             labelName: "Confirm Password",
-                            obscureText: false,
+                            obscureText: true,
                           ),
 
                               //===========================ended customTextFormFields
