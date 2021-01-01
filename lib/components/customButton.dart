@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  final onpressd;
+  final VoidCallback onpressd;
   final btnColor;
   final btnTextColor;
   final String text;
@@ -10,7 +10,7 @@ class CustomButton extends StatelessWidget {
   final double pdHorizontal;
 
   const CustomButton({
-    @required this.onpressd,
+    this.onpressd,
     this.btnColor,
     this.btnTextColor,
     @required this.text,
@@ -23,7 +23,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
-      onPressed: () {},
+      onPressed: onpressd,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
       ),

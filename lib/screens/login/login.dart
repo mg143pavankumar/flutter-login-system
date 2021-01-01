@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:login_system/components/customButton.dart';
 import 'package:login_system/components/customTextFormField.dart';
 import 'package:login_system/constants/colors.dart';
+import 'package:login_system/screens/resetPassword/resetPassword.dart';
 import 'package:login_system/screens/signup/signUp.dart';
 
 class Login extends StatefulWidget {
@@ -75,13 +76,19 @@ class _LoginState extends State<Login> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
-                                  Text(
-                                    "Forgot Password",
-                                    style: TextStyle(
-                                      color: primary,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w500,
-                                      decoration: TextDecoration.underline,
+                                  GestureDetector(
+                                    onTap: () => {
+                                         Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => RestPasswordScreen(),
+                                         ),),
+                                    },
+                                    child: Text(
+                                      "Forgot Password",
+                                      style: TextStyle(
+                                        color: primary,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        decoration: TextDecoration.underline,
+                                      ),
                                     ),
                                   ),
                                 ],

@@ -150,35 +150,3 @@ class _SignUpState extends State<SignUp> {
     );
   }
 }
-
-
-
-
-                          
-//                           Container(
-//                             margin: const EdgeInsets.all(15),
-//                             child: Row(
-//                                 mainAxisAlignment: MainAxisAlignment.center,
-//                                 children: [
-//                                   Text(
-//                                     "Already Rigistered? ",
-//                                     style: TextStyle(
-//                                       fontSize: 16,
-//                                       fontWeight: FontWeight.w400,
-//                                     ),
-//                                   ),
-//                                   GestureDetector(
-//                                     onTap: () => {
-//                                       Navigator.pop(context),
-//                                     },
-//                                     child: Text(
-//                                       "  Login",
-//                                       style: TextStyle(
-//                                         color: Colors.blue,
-//                                         fontSize: 16,
-//                                         fontWeight: FontWeight.w400,
-//                                       ),
-//                                     ),
-//                                   ),
-//                                 ]),
-//                           )
